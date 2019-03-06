@@ -1,22 +1,23 @@
 ﻿using System;
 
-namespace Mileage
+namespace gasmileage
 {
-    public static class Program
+    class Program
     {
-        public static void Main()
+        static void Main(string[] args)
         {
+            int miles, gallons, mph;
             Console.Write("How many miles have you driven? ");
-
-            // Get input from the user and save it to a variable.
+            miles = Convert.ToInt32(Console.ReadLine());
 
             Console.Write("How many gallons of gas have you consumed? ");
-
-            // Get input from the user and save it to a second variable.
-
-            // Output - Your miles per gallon is (computed value)
+            gallons = Convert.ToInt32(Console.ReadLine());
+            mph = miles / gallons;
+            Console.WriteLine(mph);
 
             Console.ReadLine();
+
         }
     }
 }
+
